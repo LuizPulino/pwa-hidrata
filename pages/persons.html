@@ -1,0 +1,42 @@
+<!--
+    1 modal + botao para exibir
+-->
+<style>
+    .name, .age, .update, .delete {
+        display: inline-block;
+        box-sizing: border-box;
+        line-height: 1.5em;
+        padding: .25em;
+        font-size: 1rem;
+        border:1px solid black;
+    }
+    .person {
+        margin: 1em 0;
+    }
+    .name {
+        width: 6em;
+    }
+    .age {
+        width: 2em;
+    }
+    .update {
+        margin: 0 1em;
+        width: 4em;
+    }
+
+    .delete {
+        width: 4em;
+    }
+</style>
+<section>
+    <h2>Pessoas</h2>
+    <div class="person" data-id="1">
+        <span class="name">José</span><span class="age">30</span><input class="update" type="button" value="editar"><input class="delete" type="button" value="excluir">
+    </div>
+    <div class="person" data-id="2">
+        <span class="name">Maria</span><span class="age">25</span><input class="update" type="button" value="editar"><input class="delete" type="button" value="excluir">
+    </div>
+</section>
+<script>
+    $("h1").css("background", "#0F0");
+</script>

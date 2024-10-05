@@ -1,0 +1,39 @@
+body{
+    font-family: helvetica;
+}
+nav ul{
+    list-style-type: none;
+}
+ 
+.active{
+    font-weight: bold;
+}
+nav img{
+    border:1px solid black;
+}
+/* For mobile phones: */
+@media only screen and (max-width: 768px) {
+    nav img {
+        display: block;
+    };
+    nav ul {
+        display: none;
+        background:red;
+    }
+    nav ul li {
+        padding: .5rem 0;
+    }    
+}
+/* For desktop: */
+@media only screen and (min-width: 768px) {
+    nav img {
+        display: none;
+    }
+    nav ul {
+        display: block;
+    }
+    nav ul li {
+        display: inline-block;
+        padding: 0 .5rem;
+    }    
+}

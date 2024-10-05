@@ -6,9 +6,23 @@
     <title>Hidrata</title>
     <link rel="stylesheet" href="./css/main.css">
     <script src="./js/zepto.min.js" defer></script>
-    <script src="./js/main.js" defer></script>
+    <script type="module" src="./js/main.js" defer></script>
 </head>
 <body>
-    <h1>Hidrata</h1>
+    <header>
+        <h1>Hidrata</h1>
+        <nav>
+            <img id="menu" src="./img/menu.svg" alt="menu">
+            <ul>
+                <li><a data-page="home" class="active">Início</a></li>
+                <li><a data-page="persons">Pessoas</a></li>
+                <li><a data-page="drink">Beber</a></li>
+                <li><a data-page="result">Result</a></li>
+            </ul>
+        </nav>
+        <span id="ua"></span>
+    </header>
+    <main></main>
+    <footer></footer>
 </body>
 </html>
