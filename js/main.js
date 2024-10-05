@@ -43,7 +43,7 @@ $("nav ul li a").each(function(){
 function loadPage(page){
     $("nav ul li a").removeClass("active");
     $("[data-page=" + page + "]").addClass("active");
-    $("main").load("pages/" + page + ".html");
+    $("main").load("pwa-hidrata/pages/" + page + ".html");
     
 }
 
